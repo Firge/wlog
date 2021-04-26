@@ -1,0 +1,12 @@
+h2#work_title {
+    text-align: center;
+}
+th {
+    background: grey;
+}
+td {
+    background: LightSkyBlue;
+}
+td:last-child {
+    background: DarkSalmon;
+}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 id="work_title">Work log</h2>
+{% for data in all_data %}
+<h3>Action # {{loop.index}}</h3>
+<table>
+    <tr><th>Title of activity</th><th>Team leader</th><th>Duration</th><th>List of collaborators</th><th>Is finished</th></tr>
+    <tr><td>{{data[0]}}</td><td>{{data[1]}}</td><td>{{data[2]}}</td><td>{{data[3]}}</td><td>{{data[4]}}</td></tr>
+</table>
+{% endfor %}
+{% endblock %}
